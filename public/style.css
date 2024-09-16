@@ -1,0 +1,95 @@
+@font-face{
+    font-family: "montserrat";
+    src:url("./fonts/newItalic.woff2");
+}
+@font-face{
+    font-family: "brush";
+    src:url("./fonts/graceland_2/Graceland.otf");
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+    position: relative;
+    background: linear-gradient(#B7EEC3,#BDCEDE);
+    
+}
+#canvas {
+	display: block;
+   
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  margin-right: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.span{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+.fp {
+    position: absolute;
+    overflow: visible;
+    top:0;
+    height:100vh;
+    left:0;
+    width:100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    display: none;
+    transition: top 1.2s ease
+}
+.fp-logo {
+    position: relative;
+    box-sizing: border-box;
+    background: url("./df.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*height:20vh;*/
+    width:20vw;
+    height:20vw;
+    z-index: 101;
+    transform: translateX(-.5vw);
+
+}
+.fp-text{
+    text-align: center;
+    font-family: montserrat;
+}
+.fp-btn {
+    position: relative;
+    width:20vw;
+    height:5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:#B6F2C6
+    transition: transform ease .3s;
+    z-index: 103;
+    cursor: pointer;
+}
+.fp-btn h2 {
+    color:#B6F2C6
+
+}
+.fp-btn:hover {
+    transform: scale(.95);
+    transition: transform ease .3s;
+}
+.fp-btn:hover .fp-btn h2 {
+    transform: scale(.95);
+    transition: transform ease .3s;
+}
+h1{
+    text-align: center;
+    font-family: brush;
+}

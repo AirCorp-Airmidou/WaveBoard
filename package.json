@@ -1,0 +1,15 @@
+{
+  "name": "waveboard_starting_files-master",
+  "version": "1.0.0",
+  "description": "SOCKET IO PROJECT NAMED WAVEBOARD STARTING FILES FOR MY STUDENTS.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.0",
+    "socket.io": "^4.7.5"
+  }
+}

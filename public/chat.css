@@ -1,0 +1,76 @@
+@font-face{
+    font-family: "montserrat";
+    src:url("./fonts/newItalic.woff2");
+}
+@font-face{
+    font-family: "brush";
+    src:url("./fonts/graceland_2/Graceland.otf");
+}
+*{
+    font-family: montserrat;
+}
+
+.chatWidget {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+    z-index: 3;
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    opacity: 0.8;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .5);
+    visibility: hidden;
+}
+
+.chatHead {
+    color: white;
+    text-align: left;
+    background-color: black;
+    padding: 5px;
+    height: 20px;
+}
+
+.chatBody {
+    height: 265px;
+    text-align: left;
+    padding: 5px;
+    overflow: auto;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    margin-bottom: 2px;
+}
+
+.msgBox {
+    float: left;
+    height: 40px;
+    resize: none;
+    outline: none;
+    width: 270px;
+    border-style: none;
+    font-family: cursive;
+    font-size: 15px;
+    margin-left: 2px;
+    background-color: white;
+}
+
+.btn {
+    outline: none;
+    border-style: none;
+}
+
+#btnSend {
+    background-color: white;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+

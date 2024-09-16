@@ -24,7 +24,8 @@ io.on("connection", function(socket){
         io.emit("new message",{author:users[socket.id],message});
     });
 });
+const port = process.env.PORT;
 
-http.listen(3000,function(){
+http.listen(port,function(){
     console.log("Le serveur marche !");
 });
